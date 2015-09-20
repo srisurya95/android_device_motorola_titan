@@ -2,3 +2,6 @@
 
 # audio
 ro.audio.monitorRotation=1
+
+ro.product.device=falcon
+ro.product.model=falcon
