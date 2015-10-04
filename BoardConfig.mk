@@ -45,5 +45,18 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 # Recovery
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-4.9/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+
+
+# TWRP
+DEVICE_RESOLUTION := 1280x720
+TW_THEME := portrait_hdpi
+
+# Liquid stuff
+LIQUID_CHANGELOG := true
+LIQUIFY := true
+GRAPHITE := true
+
 # inherit from the proprietary version
 -include vendor/motorola/titan/BoardConfigVendor.mk
